@@ -1,11 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Franco Chumba" />
+  <meta name="description" content="WDD 231 course home page for Web Frontend Development I." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/small copy.css" />
+  <link rel="stylesheet" href="styles/larger copy.css" />
+  <script src="scripts/index copy.js" defer></script>
+  <title>WDD 231 - Home Page</title>
 </head>
+
 <body>
-    
+  <header>
+    <div class="branding-container">
+      <img src="images/profile.webp" alt="WDD 231 course home page logo" width="48" height="48" />
+      <span>PERSONAL WEB</span>
+      <span>Franco Chumba</span>
+      <button id="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="final/index.html">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="about-section">
+      <article>
+        <h2>About Me</h2>
+        <p>
+          My name is Franco Chumba. I am studying web frontend development and
+          learning how to create responsive, accessible, and well-structured
+          websites using HTML, CSS, and JavaScript.
+        </p>
+      </article>
+
+      <section class="aside-section">
+        <h2>Student Photo</h2>
+        <figure>
+          <img src="images/profile.webp" alt="profile photo" width="300" height="300" />
+        </figure>
+      </section>
+    </div>
+
+    <section class="courses-container">
+      <h2>Web Certificate Courses</h2>
+
+      <div class="filters">
+        <button id="all" type="button" class="filter-button active-filter">
+          All
+        </button>
+        <button id="cse" type="button" class="filter-button">CSE</button>
+        <button id="wdd" type="button" class="filter-button">WDD</button>
+      </div>
+
+      <div class="courses" id="courses"></div>
+
+      <p id="totalCredits"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Credits</p>
+
+    <nav class="footer-nav" aria-label="Social media links">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/francochumba">
+            <img src="images/Linkedin.svg" alt="LinkedIn website" width="32" height="32" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/francochumba/wdd231" target="_blank">
+            <img src="images/github.svg" alt="GitHub page" width="32" height="32" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/franco.maximiliano.chumba.perez.2025/" target="blank">
+            <img src="images/facebook.svg" alt="facebook profile" width="32" height="32" />
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank" rel="noopener">
+            <img src="images/instagram.svg" alt="Instagram profile" width="32" height="32" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="info-container">
+      <p>
+        &copy; <span id="currentyear"></span> | Franco Chumba | Rancagua,
+        Chile
+      </p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
 </body>
+
 </html>
