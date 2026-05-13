@@ -24,16 +24,13 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #eef8ee;
-}
 
 body {
     font-family: var(--body-font);
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.6;
-    max-width: 1100px;
+    width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -66,6 +63,7 @@ p {
 
 header {
     background-color: var(--card-color);
+    margin: 10px;
 }
 
 .branding-container {
@@ -229,6 +227,7 @@ footer {
     color: white;
     text-align: center;
     padding: var(--spacing-medium) var(--spacing-small);
+    margin: 10px;
 }
 
 footer p {
@@ -253,6 +252,7 @@ footer img {
     background-color: white;
     border-radius: 50%;
     padding: 5px;
+   
 }
 
 .info-container {

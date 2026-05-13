@@ -1,0 +1,7 @@
+export function displayDates() {
+    const currentYear = document.querySelector("#currentyear");
+    const lastModified = document.querySelector("#lastModified");
+
+    currentYear.textContent = new Date().getFullYear();
+    lastModified.textContent = `Last Modified: ${document.lastModified}`;
+}
