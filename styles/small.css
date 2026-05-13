@@ -1,12 +1,11 @@
 :root {
-    --primary-color: #1d4ed8;
+    --primary-color: #021b6b;
     --secondary-color: #facc15;
     --background-color: #f8fafc;
     --card-color: #ffffff;
-    --text-color: #111827;
-    --muted-color: #4b5563;
+    --text-color: #0f2756;
     --border-color: #d1d5db;
-    --nav-color: #1d4ed8;
+    --nav-color: #02278a;
     --nav-border-color: #9bb3ff;
     --completed-color: #166534;
     --course-card-color: #e5e7eb;
@@ -190,7 +189,7 @@ main div button {
     padding: 10px 18px;
     border: 1px solid var(--primary-color);
     background-color: var(--white-color);
-    color: var(--primary-color);
+    color: var(--black-color);
     border-radius: 6px;
     font-weight: 700;
     cursor: pointer;

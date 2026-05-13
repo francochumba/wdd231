@@ -35,11 +35,11 @@
         text-decoration: none;
     }
 
-    #primary-nav a:hover,
-    #primary-nav a.active {
-        background-color: var(--secondary-color);
-        color: var(--black-color);
-    }
+#primary-nav a:hover,
+#primary-nav a.active {
+    background-color: var(--secondary-color);
+    color: var(--black-color);
+}
 
     h1 {
         font-size: 2rem;
