@@ -6,6 +6,12 @@
     --text-color: #111827;
     --muted-color: #4b5563;
     --border-color: #d1d5db;
+    --nav-color: #1d4ed8;
+    --nav-border-color: #9bb3ff;
+    --completed-color: #166534;
+    --course-card-color: #e5e7eb;
+    --white-color: #ffffff;
+    --black-color: #000000;
 
     --spacing-small: 10px;
     --spacing-medium: 25px;
@@ -31,7 +37,8 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     width: 100%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
     overflow-x: hidden;
 }
 
@@ -45,14 +52,14 @@ h1 {
     font-family: var(--heading-font);
     font-size: var(--font-size-big);
     text-align: left;
-    margin: var(--spacing-small);
+    margin: var(--spacing-large);
 }
 
 h2 {
     font-family: var(--heading-font);
     font-size: var(--font-size-medium);
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
     padding: var(--spacing-small);
     text-align: center;
 }
@@ -63,7 +70,7 @@ p {
 
 header {
     background-color: var(--card-color);
-    margin: 10px;
+    margin: var(--spacing-small);
 }
 
 .branding-container {
@@ -77,6 +84,7 @@ header {
     width: 48px;
     height: 48px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .branding-container span {
@@ -92,7 +100,7 @@ header {
     padding: 8px 12px;
     border: 1px solid var(--border-color);
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
     font-size: 1.4rem;
     border-radius: 6px;
     cursor: pointer;
@@ -109,17 +117,17 @@ header {
 #primary-nav ul {
     display: block;
     list-style: none;
-    background-color: var(--primary-color);
+    background-color: var(--nav-color);
 }
 
 #primary-nav li {
-    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    border-top: 1px solid var(--nav-border-color);
 }
 
 #primary-nav a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     padding: 12px;
     text-align: left;
 }
@@ -127,7 +135,7 @@ header {
 #primary-nav a:hover,
 #primary-nav a.active {
     background-color: var(--secondary-color);
-    color: var(--text-color);
+    color: var(--black-color);
 }
 
 main {
@@ -181,7 +189,7 @@ main {
 main div button {
     padding: 10px 18px;
     border: 1px solid var(--primary-color);
-    background-color: white;
+    background-color: var(--white-color);
     color: var(--primary-color);
     border-radius: 6px;
     font-weight: 700;
@@ -191,7 +199,7 @@ main div button {
 main div button:hover,
 main div button.active-filter {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
 }
 
 .courses {
@@ -202,14 +210,14 @@ main div button.active-filter {
 
 .course-card {
     padding: var(--spacing-small);
-    border: solid 1px var(--border-color);
-    background-color: #e5e7eb;
+    border: 1px solid var(--border-color);
+    background-color: var(--course-card-color);
     color: var(--text-color);
 }
 
 .course-card.completed {
-    background-color: #166534;
-    color: white;
+    background-color: var(--completed-color);
+    color: var(--white-color);
 }
 
 .course-card h3 {
@@ -224,10 +232,10 @@ main div button.active-filter {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white-color);
     text-align: center;
     padding: var(--spacing-medium) var(--spacing-small);
-    margin: 10px;
+    margin: var(--spacing-small);
 }
 
 footer p {
@@ -249,10 +257,9 @@ footer a {
 footer img {
     width: 42px;
     height: 42px;
-    background-color: white;
+    background-color: var(--white-color);
     border-radius: 50%;
     padding: 5px;
-   
 }
 
 .info-container {

@@ -2,7 +2,11 @@
     #hamburger {
         display: none;
     }
-
+.branding-container img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
     #primary-nav {
         display: block;
     }
@@ -11,30 +15,30 @@
         display: flex;
         justify-content: flex-start;
         list-style: none;
-        background-color: var(--primary-color);
+        background-color: var(--nav-color);
     }
 
     #primary-nav li {
-        border-top: none;
-        border-right: 1px solid rgba(255, 255, 255, 0.35);
+        border-top: 0;
+        border-right: 1px solid var(--nav-border-color);
     }
 
     #primary-nav li:last-child {
-        border-right: none;
+        border-right: 0;
     }
 
     #primary-nav a {
         display: block;
         padding: 8px 18px;
         text-align: center;
-        color: white;
+        color: var(--white-color);
         text-decoration: none;
     }
 
     #primary-nav a:hover,
     #primary-nav a.active {
         background-color: var(--secondary-color);
-        color: var(--text-color);
+        color: var(--black-color);
     }
 
     h1 {
