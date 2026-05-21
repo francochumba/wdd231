@@ -1,0 +1,96 @@
+@media screen and (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+
+    .branding-container img {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+    }
+
+    #primary-nav {
+        display: block;
+    }
+
+    #primary-nav ul {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        background-color: var(--blue);
+        color: var(--white);
+    }
+
+    #primary-nav li {
+        border-top: 0;
+        border-right: 1px solid var(--sky);
+    }
+
+    #primary-nav li:last-child {
+        border-right: 0;
+    }
+
+    #primary-nav a {
+        display: block;
+        padding: 8px 18px;
+        text-align: center;
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    #primary-nav a:hover,
+    #primary-nav a.active {
+        background-color: var(--yellow);
+        color: var(--black);
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin: var(--spacing-small) 0;
+    }
+
+    main {
+        padding: var(--spacing-small);
+    }
+
+    .view-options {
+        margin-top: var(--spacing-small);
+        margin-bottom: var(--spacing-medium);
+    }
+
+    .view-options div {
+        display: flex;
+        justify-content: center;
+        gap: var(--spacing-small);
+    }
+
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-medium);
+    }
+
+    #members.list {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-small);
+    }
+
+    .member-card {
+        padding: var(--spacing-small);
+    }
+
+    .member-card img {
+        height: 150px;
+    }
+
+    #members.list .member-card {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1.2fr 1fr;
+        align-items: center;
+        gap: var(--spacing-small);
+        text-align: left;
+    }
+
+    footer {
+        margin-top: var(--spacing-small);
+    }
+}
