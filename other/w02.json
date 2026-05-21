@@ -1,0 +1,33 @@
+{
+    "family_name": "Chumba",
+    "arrive_date": "2026-04-26",
+    "number_of_members": 5,
+    "bishopric_visit": false,
+    "family_members": [
+        {
+            "name": "Franco",
+            "gender": "male",
+            "birthdate": "2002-02-14"
+        },
+        {
+            "name": "Pablo",
+            "gender": "male",
+            "birthdate": "2002-02-14"
+        },
+        {
+            "name": "Juana",
+            "gender": "female",
+            "birthdate": "2002-02-14"
+        },
+        {
+            "name": "Flavio",
+            "gender": "male",
+            "birthdate": "2002-02-14"
+        },
+        {
+            "name": "Joaquin",
+            "gender": "male",
+            "birthdate": "2002-02-14"
+        }
+    ]
+}

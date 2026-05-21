@@ -1,0 +1,65 @@
+[
+  {
+    "name": "INACAP Rancagua",
+    "address": "Av. Nelson Pereira 2519, Rancagua, Región de O'Higgins",
+    "phone": "+56 72 232 6300",
+    "website": "https://portal.inacap.cl/sede-rancagua",
+    "image": "inacap-rancagua.webp",
+    "membership": 3,
+    "description": "Higher education institution offering technical and professional programs connected to productive sectors."
+  },
+  {
+    "name": "Universidad de O'Higgins",
+    "address": "Av. Libertador Bernardo O'Higgins 611, Rancagua, Región de O'Higgins",
+    "phone": "+56 2 2903 0000",
+    "website": "https://www.uoh.cl",
+    "image": "universidad-ohiggins.webp",
+    "membership": 3,
+    "description": "Public regional university focused on education, research, and regional development."
+  },
+  {
+    "name": "AIEP Rancagua",
+    "address": "Cuevas 70, Rancagua, Región de O'Higgins",
+    "phone": "600 712 0015",
+    "website": "https://www.aiep.cl/sede/aiep-rancagua/",
+    "image": "aiep-rancagua.webp",
+    "membership": 2,
+    "description": "Technical and professional education institution with programs for students and working adults."
+  },
+  {
+    "name": "Hotel Diego de Almagro Rancagua",
+    "address": "Av. Libertador Bernardo O'Higgins 34, Rancagua, Región de O'Higgins",
+    "phone": "+56 72 235 1400",
+    "website": "https://www.dahoteles.com/es/da-rancagua",
+    "image": "hotel-diego-almagro-rancagua.webp",
+    "membership": 2,
+    "description": "Hotel located in central Rancagua, serving visitors, business travelers, and tourists."
+  },
+  {
+    "name": "Hospital Dr. Franco Ravera Zunino",
+    "address": "Av. Alameda 3095, Rancagua, Región de O'Higgins",
+    "phone": "53 266 3363",
+    "website": "https://hospitalfrancoravera.cl/",
+    "image": "hospital-franco-ravera.webp",
+    "membership": 1,
+    "description": "Regional public hospital providing high-complexity healthcare services to the community."
+  },
+  {
+    "name": "Essbio Rancagua",
+    "address": "Av. Bello Horizonte 845, Rancagua, Región de O'Higgins",
+    "phone": "+56 72 244 3030",
+    "website": "https://www.essbio.cl/",
+    "image": "essbio-rancagua.webp",
+    "membership": 2,
+    "description": "Water and sanitation service company operating in the O'Higgins region."
+  },
+  {
+    "name": "Plaza América Rancagua",
+    "address": "Av. Alberto Einstein 287-290, Rancagua, Región de O'Higgins",
+    "phone": "+56 9 4261 5918",
+    "website": "https://plazamerica.cl/",
+    "image": "plaza-america-rancagua.webp",
+    "membership": 1,
+    "description": "Commercial center with shops, services, and community-oriented retail spaces."
+  }
+]

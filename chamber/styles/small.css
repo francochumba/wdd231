@@ -1,0 +1,25 @@
+:root {
+    --blue: #021b6b;
+    --sky: #dbeafe;
+    --yellow: #facc15;
+    --green: #166534;
+    --black: #000000;
+    --white: #ffffff;
+
+    --spacing-small: 10px;
+    --spacing-medium: 25px;
+    --spacing-large: 40px;
+
+    --heading-font: "Roboto", Arial, Helvetica, sans-serif;
+    --body-font: "Roboto", Arial, Helvetica, sans-serif;
+
+    --font-size-small: 15px;
+    --font-size-medium: 20px;
+    --font-size-big: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
