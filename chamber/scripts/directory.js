@@ -12,6 +12,11 @@ lastModified.textContent = `Last Modification: ${document.lastModified}`;
 if (hamburger && primaryNav) {
     hamburger.addEventListener("click", () => {
         primaryNav.classList.toggle("open");
+
+        const isOpen = primaryNav.classList.contains("open");
+
+        hamburger.textContent = isOpen ? "✕" : "☰";
+        hamburger.setAttribute("aria-expanded", isOpen);
     });
 }
 
@@ -47,12 +52,12 @@ const displayMembers = (members) => {
         card.classList.add("member-card");
 
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}" loading="lazy">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <p>${member.description}</p>
-            <a href="${member.website}" target="_blank">Visit Website</a>
+            <img class="member-image" src="images/${member.image}" alt="${member.name}" loading="lazy">
+            <h3 class="member-name">${member.name}</h3>
+            <p class="member-address">${member.address}</p>
+            <p class="member-phone">${member.phone}</p>
+            <a class="member-website" href="${member.website}" target="_blank">Visit Website</a>
+            <p class="member-description">${member.description}</p>
             <span class="member-level ${getMembershipClass(member.membership)}">
                 ${getMembershipLevel(member.membership)}
             </span>
@@ -65,6 +70,11 @@ const displayMembers = (members) => {
 const getMembers = async () => {
     try {
         const response = await fetch("data/members.json");
+
+        if (!response.ok) {
+            throw new Error("Could not load members.json");
+        }
+
         const data = await response.json();
 
         displayMembers(data);

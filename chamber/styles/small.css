@@ -187,43 +187,42 @@ main {
 #members.list {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 0;
 }
 
 .member-card {
     background-color: var(--white);
     border: 1px solid var(--sky);
-    overflow: hidden;
-    text-align: center;
     padding: var(--spacing-small);
+    text-align: center;
 }
 
-.member-card img {
+.member-image {
     width: 100%;
-    max-width: 260px;
-    height: 160px;
-    object-fit: cover;
+    max-width: 220px;
+    height: 120px;
+    object-fit: contain;
     margin: 0 auto var(--spacing-small);
 }
 
-.member-card h3 {
+.member-name {
     color: var(--blue);
+    font-size: 1.1rem;
     margin-bottom: 5px;
 }
 
-.member-card p {
+.member-address,
+.member-phone,
+.member-description {
     margin-bottom: 5px;
 }
 
-.member-card a {
+.member-website {
     display: inline-block;
     color: var(--blue);
     font-weight: 700;
-    text-decoration: none;
-    margin-top: 5px;
-}
-
-.member-card a:hover {
     text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 .member-level {
@@ -250,11 +249,34 @@ main {
 }
 
 #members.list .member-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
     text-align: left;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    box-shadow: none;
 }
 
-#members.list .member-card img {
+#members.list .member-card:nth-child(odd) {
+    background-color: var(--sky);
+}
+
+#members.list .member-card:nth-child(even) {
+    background-color: var(--white);
+}
+
+#members.list .member-image,
+#members.list .member-description,
+#members.list .member-level {
     display: none;
+}
+
+#members.list .member-name,
+#members.list .member-address,
+#members.list .member-phone,
+#members.list .member-website {
+    margin: 0;
 }
 
 footer {
