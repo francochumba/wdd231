@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Franco Chumba">
     <meta name="description" content="Rancagua Chamber of Commerce Home Site page for WDD 231.">
-    <meta property="og:url" content="https://francochumba.github.io/wdd231/chamber/directory.html">
-    <meta property="og:title" content="Rancagua Chamber of Commerce Directory">
+    <meta property="og:url" content="https://francochumba.github.io/wdd231/chamber/">
+    <meta property="og:title" content="Rancagua Chamber of Commerce Home">
     <meta property="og:description"
-        content="Stablish the Home site to showcase and bring information relevanto about Rancagua, Chile.">
+        content="Home page for the Rancagua Chamber of Commerce, showcasing community information, local events, weather, and business spotlights.">
     <meta property="og:image" content="https://francochumba.github.io/wdd231/chamber/images/logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script type="module" src="scripts/directory.js"></script>
+    <script type="module" src="scripts/home.js"></script>
     <title>Rancagua Chamber of Commerce Home Site</title>
 </head>
 
@@ -41,44 +41,38 @@
     </nav>
     <main>
         <section class="hero">
+            <img src="images/plaza_rancagua.webp" alt="View of Rancagua, Chile" class="hero-image">
             <div class="hero-content">
-                <h1>Welcome to My Website</h1>
-                <img src="images/hero.webp" alt="Rancagua hero image">
-                <p>This is a stunning hero section.</p>
-                <button id="cta" type="button">
-                    <a href="join.html" class="cta-button">Join the Chamber</a>
-                </button>
+                <h1>Welcome to the Rancagua Chamber of Commerce</h1>
+                <p>Connecting local businesses, community members, and opportunities in Rancagua, Chile.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
             </div>
         </section>
-        <h2>Home</h2>
-        <section class="events">
-            <article>
-                <h3>Current Events</h3>
-                <nav>
-                    <ul>
-                        <li>Business Networking Breakfast</li>
-                        <li>Small Business Workshop</li>
-                        <li>Community Market Weekend</li>
-                    </ul>
-                </nav>
-            </article>
-        </section>
-        <section class="weather">
-            <article>
-                <h3>Current Weather</h3>
-            </article>
-            <article>
+
+        <section class="home-content">
+            <section class="events">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>Rancagua Business Networking Breakfast</li>
+                    <li>Small Business Workshop for Local Entrepreneurs</li>
+                    <li>O'Higgins Community Market Weekend</li>
+                </ul>
+            </section>
+
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <p id="current-temp"></p>
+                <p id="weather-desc"></p>
+
                 <h3>Weather Forecast</h3>
-                <nav>
-                    <ul>
-                        <li>Today:</li>
-                        <li>Wednesday:</li>
-                        <li>Thursday:</li>
-                    </ul>
-                </nav>
-            </article>
+                <ul id="forecast"></ul>
+            </section>
         </section>
-        <section class="spotlights"></section>
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards" class="spotlight-cards"></div>
+        </section>
     </main>
     <footer>
         <p><strong>Rancagua Chamber of Commerce</strong></p>
