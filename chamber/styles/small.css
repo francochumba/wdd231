@@ -341,7 +341,9 @@ footer img {
 .hero-content h1 {
     margin: 0 0 0.5rem;
     font-size: 1.5rem;
+    color: var(--white);
 }
+
 
 .hero-content p {
     margin: 0 0 1rem;
@@ -380,3 +382,21 @@ footer img {
     display: grid;
     gap: 1rem;
 }
+
+.spotlight-card {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 0.75rem;
+}
+
+.spotlight-card h3 {
+    margin: 0.5rem 0;
+}
+
