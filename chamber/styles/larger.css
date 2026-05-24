@@ -72,7 +72,7 @@
     #members.grid .member-card {
         min-height: 230px;
         padding: var(--spacing-small);
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+        box-shadow: 0 3px 8px var(--shadow);
         display: flex;
         flex-direction: column;
         justify-content: center;

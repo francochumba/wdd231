@@ -1,10 +1,12 @@
 :root {
-    --blue: #021b6b;
-    --sky: #dbeafe;
-    --yellow: #facc15;
-    --green: #166534;
-    --black: #000000;
-    --white: #ffffff;
+    --blue: rgb(2 27 107);
+    --sky: rgb(219 234 254);
+    --yellow: rgb(250 204 21);
+    --green: rgb(22 101 52);
+    --black: rgb(0 0 0);
+    --white: rgb(255 255 255);
+    --overlay: rgb(0 0 0 / 65%);
+    --shadow: rgb(0 0 0 / 25%);
 
     --spacing-small: 10px;
     --spacing-medium: 25px;
@@ -280,6 +282,94 @@ main {
     margin: 0;
 }
 
+.hero {
+    position: relative;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--overlay);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.hero-content p {
+    margin: 0 0 1rem;
+    color: var(--white);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.home-content,
+.spotlights {
+    padding: 1rem;
+}
+
+.events,
+.weather,
+.spotlights {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid var(--sky);
+    border-radius: 8px;
+}
+
+.events ul,
+#forecast {
+    list-style: disc;
+    padding-left: 1.25rem;
+}
+
+.spotlight-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 0.75rem;
+}
+
+.spotlight-card h3 {
+    margin: 0.5rem 0;
+}
+
 footer {
     background-color: var(--blue);
     color: var(--white);
@@ -315,88 +405,3 @@ footer img {
 .info-container {
     font-size: var(--font-size-small);
 }
-
-.hero {
-    position: relative;
-    margin-bottom: 1.5rem;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero-content {
-    position: absolute;
-    left: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.65);
-    color: #ffffff;
-    border-radius: 8px;
-}
-
-.hero-content h1 {
-    margin: 0 0 0.5rem;
-    font-size: 1.5rem;
-    color: var(--white);
-}
-
-
-.hero-content p {
-    margin: 0 0 1rem;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1rem;
-    background-color: #facc15;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 6px;
-}
-
-.home-content,
-.spotlights {
-    padding: 1rem;
-}
-
-.events,
-.weather,
-.spotlights {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-}
-
-.events ul,
-#forecast {
-    padding-left: 1.25rem;
-}
-
-.spotlight-cards {
-    display: grid;
-    gap: 1rem;
-}
-
-.spotlight-card {
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.spotlight-card img {
-    max-width: 120px;
-    height: auto;
-    margin-bottom: 0.75rem;
-}
-
-.spotlight-card h3 {
-    margin: 0.5rem 0;
-}
-
