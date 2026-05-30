@@ -12,12 +12,36 @@ function capitalizeWords(text) {
         .join(" ");
 }
 
+function getWeatherIcon(iconCode) {
+    return `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+}
+
 function displayCurrentWeather(data) {
     const currentTemp = document.querySelector("#current-temp");
     const weatherDesc = document.querySelector("#weather-desc");
 
-    currentTemp.textContent = `Temperature: ${data.main.temp.toFixed(0)}°C`;
-    weatherDesc.textContent = `Condition: ${capitalizeWords(data.weather[0].description)}`;
+    const description = capitalizeWords(data.weather[0].description);
+    const iconCode = data.weather[0].icon;
+    const temperature = data.main.temp.toFixed(0);
+    const feelsLike = data.main.feels_like.toFixed(0);
+    const humidity = data.main.humidity;
+    const windSpeed = data.wind.speed.toFixed(1);
+
+    currentTemp.classList.add("weather-main");
+
+    currentTemp.innerHTML = `
+        <img src="${getWeatherIcon(iconCode)}" alt="${description}" class="weather-icon">
+        <span class="weather-temp">${temperature}°C</span>
+    `;
+
+    weatherDesc.classList.add("weather-details");
+
+    weatherDesc.innerHTML = `
+        <span><strong>Condition:</strong> ${description}</span>
+        <span><strong>Feels Like:</strong> ${feelsLike}°C</span>
+        <span><strong>Humidity:</strong> ${humidity}%</span>
+        <span><strong>Wind:</strong> ${windSpeed} m/s</span>
+    `;
 }
 
 function displayForecast(data) {
@@ -32,9 +56,19 @@ function displayForecast(data) {
     dailyForecasts.forEach((day) => {
         const listItem = document.createElement("li");
         const date = new Date(day.dt_txt);
-        const weekday = date.toLocaleDateString("en-US", { weekday: "long" });
+        const weekday = date.toLocaleDateString("en-US", { weekday: "short" });
+        const iconCode = day.weather[0].icon;
+        const description = capitalizeWords(day.weather[0].description);
+        const temp = day.main.temp.toFixed(0);
 
-        listItem.textContent = `${weekday}: ${day.main.temp.toFixed(0)}°C`;
+        listItem.classList.add("forecast-item");
+
+        listItem.innerHTML = `
+            <span class="forecast-day">${weekday}</span>
+            <img src="${getWeatherIcon(iconCode)}" alt="${description}" class="forecast-icon">
+            <span class="forecast-temp">${temp}°C</span>
+        `;
+
         forecastList.appendChild(listItem);
     });
 }

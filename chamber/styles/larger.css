@@ -141,25 +141,67 @@
 
     .home-content {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2.2fr 1fr;
         gap: 1rem;
+        align-items: start;
     }
 
-    .spotlight-cards {
-        grid-template-columns: repeat(3, 1fr);
+    .event-list {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card {
+        grid-template-columns: 80px 1fr;
+        min-height: 115px;
+    }
+
+    .event-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .weather-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #forecast {
+        grid-template-columns: 1fr;
+    }
+
+    .forecast-item {
+        grid-template-columns: 1fr auto 1fr;
+    }
+
+    .spotlight-carousel {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    .spotlight-track {
+        gap: var(--spacing-medium);
+    }
+
+    .spotlight-card {
+        flex: 0 0 calc((100% - 50px) / 3);
+        min-height: 260px;
+    }
+
+    .spotlight-logo {
+        width: 260px;
+        height: 150px;
+    }
+
+    .join-layout {
+        grid-template-columns: 1fr 320px;
+        align-items: start;
+    }
+
+    .form-card,
+    .membership-card,
+    .thankyou-card {
+        padding: var(--spacing-medium);
     }
 
     footer {
         margin-top: var(--spacing-small);
     }
-    .join-layout {
-    grid-template-columns: 1fr 320px;
-    align-items: start;
-}
-
-.form-card,
-.membership-card,
-.thankyou-card {
-    padding: var(--spacing-medium);
-}
 }
