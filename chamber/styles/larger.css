@@ -152,4 +152,14 @@
     footer {
         margin-top: var(--spacing-small);
     }
+    .join-layout {
+    grid-template-columns: 1fr 320px;
+    align-items: start;
+}
+
+.form-card,
+.membership-card,
+.thankyou-card {
+    padding: var(--spacing-medium);
+}
 }

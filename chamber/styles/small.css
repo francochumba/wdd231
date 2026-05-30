@@ -405,3 +405,154 @@ footer img {
 .info-container {
     font-size: var(--font-size-small);
 }
+
+/**********************JOIN PAGE*******/
+.join-layout {
+    display: grid;
+    gap: var(--spacing-medium);
+}
+
+.form-card,
+.membership-card,
+.thankyou-card {
+    background-color: var(--white);
+    border: 1px solid var(--sky);
+    border-radius: 8px;
+    padding: var(--spacing-small);
+}
+
+.form-card h2,
+.membership-info h2,
+.thankyou-card h2 {
+    margin-bottom: var(--spacing-small);
+}
+
+.join-form {
+    display: grid;
+    gap: var(--spacing-small);
+}
+
+.join-form label {
+    display: grid;
+    gap: 4px;
+    font-weight: 700;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--sky);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.join-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: 2px solid var(--yellow);
+    border-color: var(--blue);
+}
+
+.submit-button,
+.modal-button,
+.close-modal {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.submit-button:hover,
+.modal-button:hover,
+.close-modal:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.membership-info {
+    display: grid;
+    gap: var(--spacing-small);
+}
+
+.membership-levels {
+    display: grid;
+    gap: var(--spacing-small);
+}
+
+.membership-card {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardFadeIn 0.8s ease forwards;
+}
+
+.membership-card h3 {
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+
+.membership-card p {
+    margin-bottom: var(--spacing-small);
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.45s;
+}
+
+@keyframes cardFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+dialog {
+    width: min(90%, 500px);
+    margin: auto;
+    padding: var(--spacing-medium);
+    border: 1px solid var(--sky);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px var(--shadow);
+}
+
+dialog::backdrop {
+    background-color: var(--overlay);
+}
+
+dialog h2 {
+    margin-bottom: var(--spacing-small);
+}
+
+dialog ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-bottom: var(--spacing-small);
+}
+
+.submitted-info {
+    display: grid;
+    gap: var(--spacing-small);
+    margin-top: var(--spacing-small);
+}

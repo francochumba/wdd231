@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franco Chumba">
+    <meta name="description" content="Rancagua Chamber of Commerce membership application page for WDD 231.">
+    <meta property="og:url" content="https://francochumba.github.io/wdd231/chamber/join.html">
+    <meta property="og:title" content="Join the Rancagua Chamber of Commerce">
+    <meta property="og:description"
+        content="Apply to become a member of the Rancagua Chamber of Commerce and connect with local business opportunities.">
+    <meta property="og:image" content="https://francochumba.github.io/wdd231/chamber/images/logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/join.js"></script>
+    <title>Join the Rancagua Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+        <div class="branding-container">
+            <img src="images/logo.webp" alt="Rancagua Chamber of Commerce logo">
+            <span>Rancagua Chamber of Commerce</span>
+            <button id="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <nav id="primary-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <section class="join-layout">
+            <section class="form-card">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html" class="join-form">
+                    <label for="firstName">
+                        First Name
+                        <input type="text" id="firstName" name="firstName" title="Applicant's first name"
+                            autocomplete="given-name" required>
+                    </label>
+
+                    <label for="lastName">
+                        Last Name
+                        <input type="text" id="lastName" name="lastName" title="Applicant's last name"
+                            autocomplete="family-name" required>
+                    </label>
+
+                    <label for="orgTitle">
+                        Organizational Title
+                        <input type="text" id="orgTitle" name="orgTitle"
+                            title="Applicant's organizational title. Use at least seven letters, spaces, or hyphens."
+                            autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    </label>
+
+                    <label for="email">
+                        Email Address
+                        <input type="email" id="email" name="email" title="Applicant's email address"
+                            autocomplete="email" placeholder="name@example.com" required>
+                    </label>
+
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input type="tel" id="phone" name="phone" title="Applicant's mobile phone number"
+                            autocomplete="tel" required>
+                    </label>
+
+                    <label for="organization">
+                        Business / Organization Name
+                        <input type="text" id="organization" name="organization"
+                            title="Business or organization name" autocomplete="organization" required>
+                    </label>
+
+                    <label for="membership">
+                        Membership Level
+                        <select id="membership" name="membership" title="Select a membership level" required>
+                            <option value="" disabled selected>Select a membership level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="description">
+                        Business / Organization Description
+                        <textarea id="description" name="description"
+                            title="Describe the business or organization"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <input type="submit" value="Apply for Membership" class="submit-button">
+                </form>
+            </section>
+
+            <section class="membership-info">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-levels">
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>For non-profit organizations. No membership fee.</p>
+                        <a href="#np-modal" class="modal-button" data-modal="np-modal">Learn More</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic chamber access for small businesses.</p>
+                        <a href="#bronze-modal" class="modal-button" data-modal="bronze-modal">Learn More</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>More visibility and access to business events.</p>
+                        <a href="#silver-modal" class="modal-button" data-modal="silver-modal">Learn More</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium visibility and stronger promotional benefits.</p>
+                        <a href="#gold-modal" class="modal-button" data-modal="gold-modal">Learn More</a>
+                    </article>
+                </div>
+            </section>
+        </section>
+
+        <dialog id="np-modal" aria-labelledby="np-title">
+            <h2 id="np-title">NP Membership Benefits</h2>
+            <ul>
+                <li>No membership fee</li>
+                <li>Access to selected chamber events</li>
+                <li>Community organization listing</li>
+                <li>Networking opportunities with local members</li>
+            </ul>
+            <button type="button" class="close-modal" data-close>Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal" aria-labelledby="bronze-title">
+            <h2 id="bronze-title">Bronze Membership Benefits</h2>
+            <ul>
+                <li>Basic business directory listing</li>
+                <li>Access to chamber networking events</li>
+                <li>Member training opportunities</li>
+                <li>Monthly chamber updates</li>
+            </ul>
+            <button type="button" class="close-modal" data-close>Close</button>
+        </dialog>
+
+        <dialog id="silver-modal" aria-labelledby="silver-title">
+            <h2 id="silver-title">Silver Membership Benefits</h2>
+            <ul>
+                <li>Enhanced business directory listing</li>
+                <li>Event discounts</li>
+                <li>Training and workshop access</li>
+                <li>Eligible for member spotlight promotion</li>
+            </ul>
+            <button type="button" class="close-modal" data-close>Close</button>
+        </dialog>
+
+        <dialog id="gold-modal" aria-labelledby="gold-title">
+            <h2 id="gold-title">Gold Membership Benefits</h2>
+            <ul>
+                <li>Premium business directory listing</li>
+                <li>Priority member spotlight opportunities</li>
+                <li>Special advertising opportunities</li>
+                <li>Exclusive event and training discounts</li>
+            </ul>
+            <button type="button" class="close-modal" data-close>Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p><strong>Rancagua Chamber of Commerce</strong></p>
+        <p>Rancagua, Region of O'Higgins, Chile</p>
+        <p>contact@rancaguachamber.cl | +56 9 1234 5678</p>
+        <p>&copy; <span id="currentyear"></span> | Franco Chumba | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

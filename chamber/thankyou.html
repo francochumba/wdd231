@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franco Chumba">
+    <meta name="description" content="Rancagua Chamber of Commerce membership application confirmation page.">
+    <meta property="og:url" content="https://francochumba.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:title" content="Thank You - Rancagua Chamber of Commerce">
+    <meta property="og:description" content="Thank you for applying to join the Rancagua Chamber of Commerce.">
+    <meta property="og:image" content="https://francochumba.github.io/wdd231/chamber/images/logo.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/thankyou.js"></script>
+    <title>Thank You - Rancagua Chamber of Commerce</title>
+</head>
+
+<body>
+    <header>
+        <div class="branding-container">
+            <img src="images/logo.webp" alt="Rancagua Chamber of Commerce logo">
+            <span>Rancagua Chamber of Commerce</span>
+            <button id="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <nav id="primary-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Thank You</h1>
+
+        <section class="thankyou-card">
+            <h2>Application Received</h2>
+            <p>Thank you for applying to join the Rancagua Chamber of Commerce.</p>
+
+            <div class="submitted-info">
+                <p><strong>First Name:</strong> <span id="display-first-name"></span></p>
+                <p><strong>Last Name:</strong> <span id="display-last-name"></span></p>
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+                <p><strong>Mobile Phone:</strong> <span id="display-phone"></span></p>
+                <p><strong>Business / Organization:</strong> <span id="display-organization"></span></p>
+                <p><strong>Submitted:</strong> <span id="display-timestamp"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Rancagua Chamber of Commerce</strong></p>
+        <p>Rancagua, Region of O'Higgins, Chile</p>
+        <p>contact@rancaguachamber.cl | +56 9 1234 5678</p>
+        <p>&copy; <span id="currentyear"></span> | Franco Chumba | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
