@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #0f766e;
+  --accent-color: #facc15;
+  --text-color: #1f2937;
+  --white-color: #ffffff;
+  --font-main: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--white-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 8px solid var(--accent-color);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+}
+
+main {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 2px solid var(--primary-color);
+  background-color: var(--white-color);
+}
+
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+h2 {
+  border-bottom: 4px solid var(--accent-color);
+  padding-bottom: 0.4rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+th,
+td {
+  border: 1px solid var(--primary-color);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.wireframe {
+  border: 3px solid var(--primary-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--white-color);
+}
+
+.wireframe div {
+  border: 2px solid var(--primary-color);
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.desktop-wireframe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.desktop-wireframe div {
+  margin: 0;
+}
+
+.desktop-header,
+.desktop-hero,
+.desktop-benefits,
+.desktop-form,
+.desktop-footer {
+  grid-column: 1 / 4;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
