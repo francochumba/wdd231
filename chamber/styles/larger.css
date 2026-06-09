@@ -205,3 +205,52 @@
         margin-top: var(--spacing-small);
     }
 }
+
+/* Discovery */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .discover-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "one two"
+      "three three"
+      "four five"
+      "six seven"
+      "eight eight";
+  }
+
+  .discover-card img {
+    height: 210px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .discover-card img:hover {
+    transform: scale(1.05);
+    filter: contrast(1.1);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .discover-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "one one two three"
+      "four five five three"
+      "six seven eight eight";
+  }
+
+  .discover-card img {
+    height: 220px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .discover-card img:hover {
+    transform: scale(1.05);
+    filter: contrast(1.1);
+  }
+}

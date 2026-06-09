@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover key places, services, education, and community features in Rancagua, Chile.">
+    <meta name="author" content="Franco Chumba">
+    <meta property="og:title" content="Discover Rancagua Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore important places and community features that represent Rancagua, Chile.">
+    <meta property="og:image" content="https://francochumba.github.io/wdd231/chamber/images/chile-rancagua.webp">
+    <meta property="og:url" content="https://francochumba.github.io/wdd231/chamber/discover.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <title>Discover Rancagua Chamber of Commerce</title>
+
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="branding-container">
+            <img src="images/logo.webp" alt="Rancagua Chamber of Commerce logo" width="48" height="48">
+            <span>Rancagua Chamber of Commerce</span>
+            <button id="hamburger" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        </div>
+
+        <nav id="primary-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="discover-intro">
+            <h1>Discover Rancagua</h1>
+            <p>Explore important places, services, education centers, and community spaces that help represent Rancagua,
+                Chile.</p>
+        </section>
+
+        <section id="visitor-message" class="visitor-message" aria-live="polite"></section>
+
+        <section id="discover-cards" class="discover-gallery" aria-label="Places to discover in Rancagua"></section>
+    </main>
+
+    <footer>
+        <p>Rancagua Chamber of Commerce</p>
+        <p>Rancagua, Region of O'Higgins, Chile</p>
+        <p>contact@rancaguachamber.cl | +56 9 1234 5678</p>
+        <p>&copy; <span id="currentyear"></span> | Franco Chumba | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
