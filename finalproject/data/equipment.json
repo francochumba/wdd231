@@ -1,0 +1,167 @@
+[
+  {
+    "id": "pressure-washer",
+    "name": "Pressure Washer",
+    "category": "Cleaning",
+    "dailyRate": 38,
+    "bestFor": "Cleaning patios, driveways, decks, and outdoor walls",
+    "safety": "Wear eye protection and keep the spray away from people, pets, and electrical outlets.",
+    "power": "Electric or gas model",
+    "image": "images/equipment/pressure-washer.svg",
+    "description": "A pressure washer helps remove dirt, algae, and stains from hard outdoor surfaces during summer maintenance."
+  },
+  {
+    "id": "lawn-mower",
+    "name": "Lawn Mower",
+    "category": "Yard Care",
+    "dailyRate": 32,
+    "bestFor": "Cutting medium-sized lawns and keeping grass even",
+    "safety": "Clear rocks and branches before mowing and keep hands away from the blade area.",
+    "power": "Gas model",
+    "image": "images/equipment/lawn-mower.svg",
+    "description": "A mower is useful for regular grass cutting when the lawn grows faster in warm weather."
+  },
+  {
+    "id": "hedge-trimmer",
+    "name": "Hedge Trimmer",
+    "category": "Yard Care",
+    "dailyRate": 24,
+    "bestFor": "Shaping bushes, hedges, and small decorative shrubs",
+    "safety": "Use gloves and keep the cord or battery clear of the cutting blade.",
+    "power": "Battery model",
+    "image": "images/equipment/hedge-trimmer.svg",
+    "description": "A hedge trimmer makes yard edges and bushes look cleaner with less effort than manual shears."
+  },
+  {
+    "id": "extension-ladder",
+    "name": "Extension Ladder",
+    "category": "Access",
+    "dailyRate": 20,
+    "bestFor": "Reaching gutters, walls, windows, and higher outdoor areas",
+    "safety": "Place the ladder on stable ground and maintain three points of contact while climbing.",
+    "power": "Manual equipment",
+    "image": "images/equipment/extension-ladder.svg",
+    "description": "An extension ladder helps with safe access for short-term cleaning, painting, or repair tasks."
+  },
+  {
+    "id": "cordless-drill",
+    "name": "Cordless Drill",
+    "category": "Repair",
+    "dailyRate": 18,
+    "bestFor": "Installing shelves, assembling outdoor furniture, and drilling pilot holes",
+    "safety": "Use the correct bit and secure the material before drilling.",
+    "power": "Battery model",
+    "image": "images/equipment/cordless-drill.svg",
+    "description": "A cordless drill is a practical tool for many home repairs and quick installation projects."
+  },
+  {
+    "id": "leaf-blower",
+    "name": "Leaf Blower",
+    "category": "Cleaning",
+    "dailyRate": 22,
+    "bestFor": "Clearing leaves, grass clippings, and light debris from outdoor areas",
+    "safety": "Wear hearing protection and avoid blowing debris toward people or vehicles.",
+    "power": "Battery model",
+    "image": "images/equipment/leaf-blower.svg",
+    "description": "A blower speeds up outdoor cleanup after mowing, trimming, or patio maintenance."
+  },
+  {
+    "id": "wet-dry-vacuum",
+    "name": "Wet Dry Vacuum",
+    "category": "Cleaning",
+    "dailyRate": 27,
+    "bestFor": "Cleaning garage dust, wet spills, and workshop debris",
+    "safety": "Check the filter setup before vacuuming wet material.",
+    "power": "Electric model",
+    "image": "images/equipment/wet-dry-vacuum.svg",
+    "description": "A wet dry vacuum is useful for cleanup jobs that are too heavy for a regular household vacuum."
+  },
+  {
+    "id": "paint-sprayer",
+    "name": "Paint Sprayer",
+    "category": "Repair",
+    "dailyRate": 35,
+    "bestFor": "Painting fences, sheds, walls, and large outdoor surfaces",
+    "safety": "Use a mask, protect nearby surfaces, and follow paint ventilation instructions.",
+    "power": "Electric model",
+    "image": "images/equipment/paint-sprayer.svg",
+    "description": "A paint sprayer can cover large surfaces faster than a brush or roller when used carefully."
+  },
+  {
+    "id": "tile-saw",
+    "name": "Tile Saw",
+    "category": "Repair",
+    "dailyRate": 42,
+    "bestFor": "Cutting tile for patios, laundry rooms, bathrooms, and repair projects",
+    "safety": "Wear eye protection and keep fingers away from the blade path.",
+    "power": "Electric model",
+    "image": "images/equipment/tile-saw.svg",
+    "description": "A tile saw gives cleaner cuts for small renovation projects that require accurate tile edges."
+  },
+  {
+    "id": "garden-tiller",
+    "name": "Garden Tiller",
+    "category": "Yard Care",
+    "dailyRate": 45,
+    "bestFor": "Preparing garden beds and loosening compacted soil",
+    "safety": "Wear boots and keep bystanders away while the tines are moving.",
+    "power": "Gas model",
+    "image": "images/equipment/garden-tiller.svg",
+    "description": "A tiller helps prepare soil for planting or landscaping without buying large seasonal equipment."
+  },
+  {
+    "id": "string-trimmer",
+    "name": "String Trimmer",
+    "category": "Yard Care",
+    "dailyRate": 21,
+    "bestFor": "Cutting grass around fences, edges, trees, and tight corners",
+    "safety": "Wear long pants and eye protection because small debris can fly outward.",
+    "power": "Battery model",
+    "image": "images/equipment/string-trimmer.svg",
+    "description": "A string trimmer finishes the areas a mower cannot reach and improves the final yard appearance."
+  },
+  {
+    "id": "circular-saw",
+    "name": "Circular Saw",
+    "category": "Repair",
+    "dailyRate": 26,
+    "bestFor": "Cutting boards for decks, shelves, garden boxes, and simple repairs",
+    "safety": "Clamp the material and wait for the blade to stop before setting the saw down.",
+    "power": "Electric model",
+    "image": "images/equipment/circular-saw.svg",
+    "description": "A circular saw is useful for straight cuts in wood during short-term building or repair tasks."
+  },
+  {
+    "id": "wheelbarrow",
+    "name": "Wheelbarrow",
+    "category": "Yard Care",
+    "dailyRate": 16,
+    "bestFor": "Moving soil, mulch, plants, stones, and outdoor materials",
+    "safety": "Do not overload the tray and lift with your legs to reduce strain.",
+    "power": "Manual equipment",
+    "image": "images/equipment/wheelbarrow.svg",
+    "description": "A wheelbarrow reduces repeated carrying when moving heavy yard or garden materials."
+  },
+  {
+    "id": "floor-fan",
+    "name": "High Airflow Fan",
+    "category": "Cleaning",
+    "dailyRate": 19,
+    "bestFor": "Drying painted areas, garages, workshops, and cleaned surfaces",
+    "safety": "Keep the fan on a dry surface and away from standing water.",
+    "power": "Electric model",
+    "image": "images/equipment/floor-fan.svg",
+    "description": "A high airflow fan helps speed up drying and ventilation after cleaning or painting."
+  },
+  {
+    "id": "generator",
+    "name": "Portable Generator",
+    "category": "Power",
+    "dailyRate": 58,
+    "bestFor": "Temporary outdoor power for tools and project areas",
+    "safety": "Use outdoors only and keep the generator far from doors, windows, and vents.",
+    "power": "Gas model",
+    "image": "images/equipment/generator.svg",
+    "description": "A portable generator provides temporary power when a project area does not have safe outlet access."
+  }
+]

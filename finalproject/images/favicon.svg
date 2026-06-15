@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+<title id="title">Summer Project Rentals Logo</title>
+<desc id="desc">A sun above a simple tool handle inside a teal circle.</desc>
+<circle cx="60" cy="60" r="56" fill="#0f766e"/>
+<circle cx="40" cy="36" r="15" fill="#facc15"/>
+<path d="M26 82h68" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+<path d="M38 75l33-33 13 13-33 33z" fill="#fff"/>
+<path d="M73 39l8-8 8 8-8 8z" fill="#facc15"/>
+</svg>
