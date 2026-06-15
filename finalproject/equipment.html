@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equipment Catalog | Summer Project Rentals</title>
+  <meta name="description" content="Browse summer rental equipment with daily rates, project uses, power types, and basic safety notes.">
+  <meta name="author" content="Franco Chumba">
+  <meta property="og:title" content="Summer Equipment Catalog">
+  <meta property="og:description" content="Compare cleaning, yard care, access, power, and repair equipment for summer projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/social-card.svg">
+  <meta property="og:url" content="https://francochumba.github.io/wdd231/finalproject/equipment.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script type="module" src="scripts/equipment.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <div class="header-content">
+      <a class="logo-link" href="index.html" aria-label="Summer Project Rentals home">
+        <img src="images/logo.svg" alt="Summer Project Rentals logo" width="42" height="42">
+        <span class="site-name">Summer Project Rentals</span>
+      </a>
+      <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-controls="navigation" aria-expanded="false">☰</button>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul id="navigation" class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="request.html">Request Rental</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-heading">
+      <h1>Equipment Catalog</h1>
+      <p class="section-intro">Review fifteen rental items. Each card includes the category, rate, power type, common project use, and a safety note.</p>
+      <button id="theme-button" class="button" type="button">Use Dark Mode</button>
+    </section>
+
+    <section class="filter-panel" aria-labelledby="filter-title">
+      <div>
+        <h2 id="filter-title" class="section-title">Filter Equipment</h2>
+        <label for="category-filter">Choose a category</label>
+        <select id="category-filter" name="category-filter">
+          <option value="all">All Categories</option>
+        </select>
+      </div>
+      <div class="summary-grid">
+        <p id="equipment-count" class="stat-card">Loading items.</p>
+        <p id="average-rate" class="stat-card">Calculating rate.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="catalog-title">
+      <h2 id="catalog-title" class="section-title">Available Equipment</h2>
+      <div id="equipment-grid" class="equipment-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <dialog id="equipment-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <h2 id="dialog-title">Equipment Details</h2>
+        <button id="dialog-close" class="dialog-close" type="button" aria-label="Close dialog">×</button>
+      </div>
+      <div id="dialog-body"></div>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <p>&copy; <span id="current-year"></span> Summer Project Rentals | Franco Chumba</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="video-demo.html">Video Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

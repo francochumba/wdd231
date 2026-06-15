@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Summer Project Rentals | Summer Equipment for Home and Yard Projects</title>
+  <meta name="description" content="Summer Project Rentals helps homeowners choose rental equipment for cleaning, yard care, repairs, and outdoor summer projects.">
+  <meta name="author" content="Franco Chumba">
+  <meta property="og:title" content="Summer Project Rentals">
+  <meta property="og:description" content="Find practical summer equipment rentals for home, garden, cleaning, and outdoor repairs.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/social-card.svg">
+  <meta property="og:url" content="https://francochumba.github.io/wdd231/finalproject/index.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <div class="header-content">
+      <a class="logo-link" href="index.html" aria-label="Summer Project Rentals home">
+        <img src="images/logo.svg" alt="Summer Project Rentals logo" width="42" height="42">
+        <span class="site-name">Summer Project Rentals</span>
+      </a>
+      <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-controls="navigation" aria-expanded="false">☰</button>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul id="navigation" class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="request.html">Request Rental</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <h1>Rent the right tools for summer home projects.</h1>
+      <p>Compare equipment for outdoor cleaning, yard care, light repairs, and short-term projects without buying tools you may only use once.</p>
+      <div class="hero-actions">
+        <a class="button secondary" href="equipment.html">View Equipment</a>
+        <a class="button" href="request.html">Request a Rental</a>
+      </div>
+    </section>
+
+    <section class="notice" aria-labelledby="visit-title">
+      <h2 id="visit-title" class="section-title">Your Visit</h2>
+      <p id="visit-message">Loading visit information.</p>
+      <button id="theme-button" class="button" type="button">Use Dark Mode</button>
+    </section>
+
+    <section aria-labelledby="featured-title">
+      <h2 id="featured-title" class="section-title">Featured Summer Equipment</h2>
+      <p class="section-intro">These popular tools support common seasonal projects such as cleaning patios, maintaining lawns, and completing simple repairs.</p>
+      <div id="featured-equipment" class="grid" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="benefits-title">
+      <h2 id="benefits-title" class="section-title">Why Renting Can Make Sense</h2>
+      <div class="benefit-grid">
+        <article class="benefit-card">
+          <h3>Lower Project Cost</h3>
+          <p>Renting helps avoid the full purchase cost of equipment needed for a short period.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Less Storage</h3>
+          <p>Large tools can take up space. Renting keeps seasonal equipment out of the garage after the project is done.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Better Tool Choice</h3>
+          <p>Visitors can compare tools by project type, safety use, and daily rental rate before requesting equipment.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <p>&copy; <span id="current-year"></span> Summer Project Rentals | Franco Chumba</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="video-demo.html">Video Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

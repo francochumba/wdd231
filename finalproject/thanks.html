@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rental Request Received | Summer Project Rentals</title>
+  <meta name="description" content="Confirmation page that displays submitted summer equipment rental request data using URL search parameters.">
+  <meta name="author" content="Franco Chumba">
+  <meta property="og:title" content="Rental Request Received">
+  <meta property="og:description" content="Review the submitted rental request details for Summer Project Rentals.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/social-card.svg">
+  <meta property="og:url" content="https://francochumba.github.io/wdd231/finalproject/thanks.html">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script type="module" src="scripts/thanks.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <div class="header-content">
+      <a class="logo-link" href="index.html" aria-label="Summer Project Rentals home">
+        <img src="images/logo.svg" alt="Summer Project Rentals logo" width="42" height="42">
+        <span class="site-name">Summer Project Rentals</span>
+      </a>
+      <button id="menu-button" class="menu-button" type="button" aria-label="Open navigation menu" aria-controls="navigation" aria-expanded="false">☰</button>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul id="navigation" class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="request.html">Request Rental</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-heading">
+      <h1>Rental Request Received</h1>
+      <p class="section-intro">This page displays the form data submitted from the rental request page.</p>
+      <button id="theme-button" class="button" type="button">Use Dark Mode</button>
+    </section>
+
+    <section id="request-output" class="results-section" aria-live="polite"></section>
+
+    <p><a class="button" href="request.html">Submit Another Request</a></p>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <p>&copy; <span id="current-year"></span> Summer Project Rentals | Franco Chumba</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+      <div class="footer-links">
+        <a href="attributions.html">Attributions</a>
+        <a href="video-demo.html">Video Demo</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
